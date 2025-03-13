@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cv_login_form/static/css/main.f4a452af.css",
+    "main.js": "/cv_login_form/static/js/main.a8333521.js",
+    "index.html": "/cv_login_form/index.html",
+    "main.f4a452af.css.map": "/cv_login_form/static/css/main.f4a452af.css.map",
+    "main.a8333521.js.map": "/cv_login_form/static/js/main.a8333521.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4a452af.css",
+    "static/js/main.a8333521.js"
+  ]
+}
