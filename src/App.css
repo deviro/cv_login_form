@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #0f172a;
+  --primary-color-dark: #020617;
+  --text-color: #1e293b;
+  --text-color-light: #475569;
+  --border-color-light: #cbd5e1;
+  --border-color: #94a3b8;
+  --background-color: #f1f5f9;
+  --light-color: #f8fafc;
+  --error-color: #ef4444;
+  
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  --border-radius-lg: 20px;
+  --border-radius-md: 12px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.loginContainer {
+  width: 100%;
+  max-width: 400px;
+
+  background-color: var(--light-color);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border-color-light);
+  box-shadow: var(--box-shadow);
+
+  z-index: 1;
+}
+
+.successContainer {
+  width: 100%;
+  max-width: 400px;
+
+  background-color: var(--light-color);
+  padding: var(--spacing-xl);
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.formTitle {
+  margin: var(--spacing-xl) 0;
+  margin-block: 0;
+  padding: var(--spacing-md) 0;
+  color: var(--text-color);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.formLabel {
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.inputField {
+  padding: var(--spacing-sm);
+
+  border: 1px solid var(--border-color-light);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow);
+
+  font-size: var(--spacing-md);
+
+  transition: border-color 0.2s;
+
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: var(--border-color);
+}
+
+.inputField::placeholder {
+  color: var(--text-color-light);
+  opacity: 0.3;
+}
+
+.errorTitle {
+  color: var(--error-color);
+  padding: 0;
+  font-size: var(--spacing-md);
+}
+
+.primaryBtn {
+  min-width: 200px;
+  padding: var(--spacing-sm);
+  margin: var(--spacing-sm) 0;
+  
+  background-color: var(--primary-color-dark);
+  border: none;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow);
+  
+  font-size: var(--spacing-md);
+  color: var(--light-color);
+  
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primaryBtn:hover {
+  background-color: var(--primary-color);
+}
+
+.primaryBtn:active {
+  transform: translateY(1px);
+}
